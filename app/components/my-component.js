@@ -17,3 +17,5 @@ export default Ember.Component.extend({
         newStyleSheet.insertRule(".reducer {height: 5px;bottom: 0px;left: 0px;border-radius: inherit; width:0%;               animation-duration: "+ ms +"s;               animation-name: getsmaller;               animation-timing-function: linear;             background-color: rgb(6, 216, 1);}" , newStyleSheet.cssRules.length);
     }
 });
+// https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/insertRule
+// https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule
