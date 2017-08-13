@@ -1,5 +1,11 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{#if x}}
+<div class="myparent">
+{{my-component ms=inval}}
+</div>
+{{/if}}
 
-{{outlet}}
+<br><br>
+{{input type='number' value=inval}}
+<br><br>
+<button onclick={{action (mut x) (if x false true)}}>Toggle</button>
+{{x}}
